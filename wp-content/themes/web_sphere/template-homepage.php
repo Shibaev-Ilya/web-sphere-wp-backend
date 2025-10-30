@@ -189,7 +189,7 @@ get_header();
                     <li class="js-scroll-animate scroll-animate">
                         <p class="advantages__item-title">
                             <svg>
-                                <use xlink:href="img/sprites/sprite.svg#award"></use>
+                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#award"></use>
                             </svg>
                             <b>Никакой абонентской платы</b>
                         </p>
@@ -199,7 +199,7 @@ get_header();
                     <li class="js-scroll-animate scroll-animate">
                         <p class="advantages__item-title">
                             <svg>
-                                <use xlink:href="img/sprites/sprite.svg#award"></use>
+                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#award"></use>
                             </svg>
                             <b>Честные сроки и гарантии</b>
                         </p>
@@ -208,7 +208,7 @@ get_header();
                     <li class="js-scroll-animate scroll-animate">
                         <p class="advantages__item-title">
                             <svg>
-                                <use xlink:href="img/sprites/sprite.svg#award"></use>
+                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#award"></use>
                             </svg>
                             <b>Говорим на одном языке</b>
                         </p>
@@ -217,7 +217,7 @@ get_header();
                     <li class="js-scroll-animate scroll-animate">
                         <p class="advantages__item-title">
                             <svg>
-                                <use xlink:href="img/sprites/sprite.svg#award"></use>
+                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#award"></use>
                             </svg>
                             <b>Скорость и оптимизация</b>
                         </p>
