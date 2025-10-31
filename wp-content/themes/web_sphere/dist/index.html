@@ -47,15 +47,14 @@
         </button>
         <nav class="header__menu js-menu">
             <ul class="header__menu-wrap">
-
                 <li>
-                    <a class="header__menu-item simple-link" href="#">О нас</a>
+                    <a href="#">О нас</a>
                 </li>
                 <li>
-                    <a class="header__menu-item simple-link" href="#">FAQ</a>
+                    <a href="#">FAQ</a>
                 </li>
                 <li>
-                    <a class="header__menu-item simple-link js-header-link" href="#">Контакты</a>
+                    <a href="#">Контакты</a>
                 </li>
             </ul>
             <button class="header__button simple-button js-open-modal" data-modal-id="callback">
@@ -100,6 +99,9 @@
                      data-modal-id="callback">
                     <div class="services__image">
                         <picture>
+                            <source type="image/webp" srcSet="./img/content/landings-mob.webp"
+                                    media="(max-width: 500px)"/>
+                            <source srcSet="./img/content/landings-mob.jpg" media="(max-width: 500px)"/>
                             <source type="image/webp" srcSet="./img/content/landings.webp"/>
                             <img class="services__landings-img" src="./img/content/landings.jpg" alt="" width="396"
                                  height="360">
@@ -201,31 +203,31 @@
                 <input type="hidden" name="form_id" value="callback">
                 <input type="hidden" name="form_name" value="Callback">
                 <label>
-                    <input class="form__input" type="text" name="name" placeholder="Имя"/>
+                    <input type="text" name="name" placeholder="Имя"/>
                 </label>
                 <label>
-                    <input class="form__input" type="tel" name="phone" placeholder="Телефон*">
+                    <input type="tel" name="phone" placeholder="Телефон*">
                 </label>
                 <label>
-                    <input class="form__input" type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email">
                 </label>
                 <label>
-                    <textarea class="form__input" name="message" cols="30" rows="5"
+                    <textarea name="message" cols="30" rows="5"
                               placeholder="Дополнительная информация о проекте"></textarea>
                 </label>
-                <label class="form__checkbox-label">
-                    <input class="form__checkbox" type="checkbox" name="agree" required/>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agree" required/>
                     <span>
                         Согласен на <a href="/agreement" target="_blank">обработку персональных данных</a>
                     </span>
                 </label>
-                <label class="form__checkbox-label">
-                    <input class="form__checkbox" type="checkbox" name="agree" required/>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agree" required/>
                     <span>
                         Ознакомлен с <a href="/policy" target="_blank" class="">политикой конфиденциальности</a>
                     </span>
                 </label>
-                <button type="submit" class="form__submit-button simple-button simple-button_light">Отправить</button>
+                <input type="submit" class="simple-button simple-button_light" value="Отправить">
             </form>
         </div>
     </section>
@@ -282,7 +284,48 @@
     </section>
 
 </main>
-
+<footer class="footer">
+    <div class="container">
+        <div class="footer__container">
+            <div class="footer__row footer__top">
+                <a class="footer__logo footer__logo_link" href="/">
+                    <svg class="footer__logo-img">
+                        <use xlink:href="img/sprites/sprite.svg#logo"></use>
+                    </svg>
+                    <span class="footer__logo-text">Web Sphere</span>
+                </a>
+                <ul class="footer__menu-wrap">
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Блог</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__row footer__contacts">
+                <div class="footer__contacts-item">Телефон: <a href="tel:+79952525063">+7 (995) 252-50-63</a></div>
+                <div class="footer__contacts-item">E-mail: <a href="mailto:websphere.site@yandex.com">websphere.site@yandex.com</a>
+                </div>
+            </div>
+            <div class="footer__row footer__bottom">
+                <div class="footer__copyright">© Web Sphere 2025, All Rights Reserved</div>
+                <div class="footer__bottom-links">
+                    <a class="footer__copyright" href="/policy" target="_blank" rel="noopener">Политика
+                        конфиденциальности</a>
+                    <a class="footer__copyright" href="/agreement" target="_blank" rel="noopener">Согласие на обработку
+                        персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <div class="modal js-modal" id="callback">
     <div class="modal__wrapper modal-contact">
@@ -319,27 +362,27 @@
                 <input type="hidden" name="form_id" value="callback">
                 <input type="hidden" name="form_name" value="Callback">
                 <label>
-                    <input class="form__input" type="text" name="name" placeholder="Имя"/>
+                    <input type="text" name="name" placeholder="Имя"/>
                 </label>
                 <label>
-                    <input class="form__input" type="tel" name="phone" placeholder="Телефон*" required>
+                    <input type="tel" name="phone" placeholder="Телефон*" required>
                 </label>
                 <label>
-                    <input class="form__input" type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email">
                 </label>
-                <label class="form__checkbox-label">
-                    <input class="form__checkbox" type="checkbox" name="agree" required/>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agree" required/>
                     <span>
                         Согласен на <a href="/agreement" target="_blank">обработку персональных данных</a>
                     </span>
                 </label>
-                <label class="form__checkbox-label">
-                    <input class="form__checkbox" type="checkbox" name="agree" required/>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agree" required/>
                     <span>
                         Ознакомлен с <a href="/policy" target="_blank" class="">политикой конфиденциальности</a>
                     </span>
                 </label>
-                <button type="submit" class="form__submit-button simple-button simple-button_light">Отправить</button>
+                <input type="submit" class="simple-button simple-button_light" value="Отправить">
             </form>
         </div>
     </div>
