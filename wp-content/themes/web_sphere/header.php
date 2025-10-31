@@ -23,12 +23,22 @@
 
 <header class="header" id="header">
     <div class="container header__container">
-        <a class="header__logo" href="<?php echo esc_url(home_url('/')) ?>">
-            <svg class="header__logo-img">
-                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
-            </svg>
-            <span class="header__logo-text">Web Sphere</span>
-        </a>
+        <?php if ( is_front_page() ) { ?>
+            <div class="header__logo">
+                <svg class="header__logo-img">
+                    <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
+                </svg>
+                <span class="header__logo-text">Web Sphere</span>
+            </div>
+        <?php } else { ?>
+            <a class="header__logo" href="<?php echo esc_url(home_url('/')) ?>">
+                <svg class="header__logo-img">
+                    <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
+                </svg>
+                <span class="header__logo-text">Web Sphere</span>
+            </a>
+        <?php } ?>
+
         <button class="header__burger js-burger" aria-label="menu">
             <span class="icon"></span>
         </button>

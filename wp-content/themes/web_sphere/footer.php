@@ -16,26 +16,29 @@
     <div class="container">
         <div class="footer__container">
             <div class="footer__row footer__top">
-                <a class="footer__logo footer__logo_link" href="/">
-                    <svg class="footer__logo-img">
-                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
-                    </svg>
-                    <span class="footer__logo-text">Web Sphere</span>
-                </a>
-                <ul class="footer__menu-wrap">
-                    <li>
-                        <a class="footer__menu-item" href="#">О нас</a>
-                    </li>
-                    <li>
-                        <a class="footer__menu-item" href="#">FAQ</a>
-                    </li>
-                    <li>
-                        <a class="footer__menu-item" href="#">Блог</a>
-                    </li>
-                    <li>
-                        <a class="footer__menu-item" href="#">Контакты</a>
-                    </li>
-                </ul>
+                <?php if ( is_front_page() ) { ?>
+                    <div class="footer__logo footer__logo_link">
+                        <svg class="footer__logo-img">
+                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
+                        </svg>
+                        <span class="footer__logo-text">Web Sphere</span>
+                    </div>
+                <?php } else { ?>
+                    <a class="footer__logo footer__logo_link" href="<?php echo esc_url( home_url( '/' ) ) ?>">
+                        <svg class="footer__logo-img">
+                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
+                        </svg>
+                        <span class="footer__logo-text">Web Sphere</span>
+                    </a>
+                <?php } ?>
+                <?php wp_nav_menu(
+                        array(
+                                'theme_location' => 'footer-menu',
+                                'container'      => false,
+                                'menu_class'     => 'footer__menu-wrap',
+                                'depth'          => 1,
+                        )
+                ); ?>
             </div>
             <div class="footer__row footer__contacts">
                 <div class="footer__contacts-item">Телефон: <a href="tel:+79952525063">+7 (995) 252-50-63</a></div>
@@ -63,7 +66,7 @@
             </svg>
         </button>
         <div class="modal__inner modal-contact__inner">
-            <div class="modal__title"><?php esc_html_e('Обсудим проект?', 'web_sphere') ?></div>
+            <div class="modal__title"><?php esc_html_e( 'Обсудим проект?', 'web_sphere' ) ?></div>
             <p class="modal-contact__text">Привет! Меня зовут Александр, и я буду рад помочь с вашим проектом, можете
                 позвонить по телефону <a
                         href="tel:+79952525063">+7 (995) 252-50-63</a> или связаться по контактам ниже</p>
@@ -112,6 +115,19 @@
                 </label>
                 <button type="submit" class="form__submit-button simple-button simple-button_light">Отправить</button>
             </form>
+        </div>
+    </div>
+</div>
+<div class="modal modal_info js-modal" id="popup">
+    <div class="modal__wrapper">
+        <button class="js-button-close modal__btn-close" title="Close" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+                <path d="M20 20L4 4m16 0L4 20"></path>
+            </svg>
+        </button>
+        <div class="modal__inner">
+            <div class="modal__title js-modal-title"></div>
+            <p class="modal__text js-modal-text"></p>
         </div>
     </div>
 </div>
