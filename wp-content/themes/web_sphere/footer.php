@@ -66,7 +66,7 @@
             </svg>
         </button>
         <div class="modal__inner modal-contact__inner">
-            <div class="modal__title"><?php esc_html_e( 'Обсудим проект?', 'web_sphere' ) ?></div>
+            <div class="modal__title">Обсудим проект?</div>
             <p class="modal-contact__text">Привет! Меня зовут Александр, и я буду рад помочь с вашим проектом, можете
                 позвонить по телефону <a
                         href="tel:+79952525063">+7 (995) 252-50-63</a> или связаться по контактам ниже</p>
@@ -88,33 +88,7 @@
             </div>
 
             <p class="modal-contact__text">Либо заполните форму и мы свяжемся с вами так быстро, как только сможем</p>
-            <form class="form modal-contact__form">
-                <input type="hidden" name="type" value="form">
-                <input type="hidden" name="form_id" value="callback">
-                <input type="hidden" name="form_name" value="Callback">
-                <label>
-                    <input class="form__input" type="text" name="name" placeholder="Имя"/>
-                </label>
-                <label>
-                    <input class="form__input" type="tel" name="phone" placeholder="Телефон*" required>
-                </label>
-                <label>
-                    <input class="form__input" type="email" name="email" placeholder="Email">
-                </label>
-                <label class="form__checkbox-label">
-                    <input class="form__checkbox" type="checkbox" name="agree" required/>
-                    <span>
-                        Согласен на <a href="/agreement" target="_blank">обработку персональных данных</a>
-                    </span>
-                </label>
-                <label class="form__checkbox-label">
-                    <input class="form__checkbox" type="checkbox" name="agree" required/>
-                    <span>
-                        Ознакомлен с <a href="/policy" target="_blank" class="">политикой конфиденциальности</a>
-                    </span>
-                </label>
-                <button type="submit" class="form__submit-button simple-button simple-button_light">Отправить</button>
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="4b677ce" title="Shall we discuss the project?" html_class="form modal-contact__form"]'); ?>
         </div>
     </div>
 </div>
@@ -126,8 +100,7 @@
             </svg>
         </button>
         <div class="modal__inner">
-            <div class="modal__title js-modal-title"></div>
-            <p class="modal__text js-modal-text"></p>
+            <p class="modal__text js-modal-text">Тексто об успешной отправке или ошибке, попробуйте еще раз</p>
         </div>
     </div>
 </div>

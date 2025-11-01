@@ -40,11 +40,11 @@ get_header();
                      data-modal-id="callback">
                     <div class="services__image">
                         <picture>
-                            <source type="image/webp"
-                                    srcSet="<?php echo get_template_directory_uri() ?>/dist/img/content/landings.webp"/>
-                            <img class="services__landings-img"
-                                 src="<?php echo get_template_directory_uri() ?>/dist/img/content/landings.jpg" alt=""
-                                 width="396"
+                            <source type="image/webp" srcSet="<?php echo get_template_directory_uri() ?>/dist/img/content/landings-mob.webp"
+                                    media="(max-width: 500px)"/>
+                            <source srcSet="<?php echo get_template_directory_uri() ?>/dist/img/content/landings-mob.jpg" media="(max-width: 500px)"/>
+                            <source type="image/webp" srcSet="<?php echo get_template_directory_uri() ?>/dist/img/content/landings.webp"/>
+                            <img class="services__landings-img" src="<?php echo get_template_directory_uri() ?>/dist/img/content/landings.jpg" alt="" width="396"
                                  height="360">
                         </picture>
                     </div>
@@ -58,11 +58,8 @@ get_header();
                      data-modal-id="callback">
                     <div class="services__image">
                         <picture>
-                            <source type="image/webp"
-                                    srcSet="<?php echo get_template_directory_uri() ?>/dist/img/content/com.webp"/>
-                            <img class="services__landings-img"
-                                 src="<?php echo get_template_directory_uri() ?>/dist/img/content/com.jpg" alt=""
-                                 width="396"
+                            <source type="image/webp" srcSet="<?php echo get_template_directory_uri() ?>/dist/img/content/com.webp"/>
+                            <img class="services__landings-img" src="<?php echo get_template_directory_uri() ?>/dist/img/content/com.jpg" alt="" width="396"
                                  height="360">
                         </picture>
                     </div>
@@ -76,11 +73,8 @@ get_header();
                      data-modal-id="callback">
                     <div class="services__image">
                         <picture>
-                            <source type="image/webp"
-                                    srcSet="<?php echo get_template_directory_uri() ?>/dist/img/content/ecomerce.webp"/>
-                            <img class="services__landings-img"
-                                 src="<?php echo get_template_directory_uri() ?>/dist/img/content/ecomerce.jpg" alt=""
-                                 width="396"
+                            <source type="image/webp" srcSet="<?php echo get_template_directory_uri() ?>/dist/img/content/ecomerce.webp"/>
+                            <img class="services__landings-img" src="<?php echo get_template_directory_uri() ?>/dist/img/content/ecomerce.jpg" alt="" width="396"
                                  height="360">
                         </picture>
                     </div>
@@ -145,37 +139,7 @@ get_header();
             <p class="form-section__title header-2 js-scroll-animate scroll-animate">Напишите нам</p>
             <p class="form-section__subtitle js-scroll-animate scroll-animate">И мы свяжемся с вами в ближайшее время и
                 обсудим детали работ</p>
-            <form class="form js-scroll-animate scroll-animate">
-                <input type="hidden" name="type" value="form">
-                <input type="hidden" name="form_id" value="callback">
-                <input type="hidden" name="form_name" value="Callback">
-                <label>
-                    <input class="form__input" type="text" name="name" placeholder="Имя"/>
-                </label>
-                <label>
-                    <input class="form__input" type="tel" name="phone" placeholder="Телефон*">
-                </label>
-                <label>
-                    <input class="form__input" type="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    <textarea class="form__input" name="message" cols="30" rows="5"
-                              placeholder="Дополнительная информация о проекте"></textarea>
-                </label>
-                <label class="form__checkbox-label">
-                    <input class="form__checkbox" type="checkbox" name="agree" required/>
-                    <span>
-                        Согласен на <a href="/agreement" target="_blank">обработку персональных данных</a>
-                    </span>
-                </label>
-                <label class="form__checkbox-label">
-                    <input class="form__checkbox" type="checkbox" name="agree" required/>
-                    <span>
-                        Ознакомлен с <a href="/policy" target="_blank" class="">политикой конфиденциальности</a>
-                    </span>
-                </label>
-                <button type="submit" class="form__submit-button simple-button simple-button_light">Отправить</button>
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="f2d1433" title="Contact us" html_class="form js-scroll-animate scroll-animate"]'); ?>
         </div>
     </section>
 
