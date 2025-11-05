@@ -41,3 +41,4 @@ wp-config.php
 #dev
 .osp
 .idea
+/wp-content/themes/web_sphere/dist/
