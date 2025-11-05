@@ -162,3 +162,8 @@ require get_template_directory() . '/inc/template-hooks.php';
  * Contact form 7
  */
 require get_template_directory() . '/inc/wpcf7.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
