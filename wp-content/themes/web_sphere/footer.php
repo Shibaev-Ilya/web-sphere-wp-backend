@@ -21,14 +21,14 @@
                         <svg class="footer__logo-img">
                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
                         </svg>
-                        <span class="footer__logo-text">Web Sphere</span>
+                        <span class="footer__logo-text"><?php _e( 'Web Sphere', 'web_sphere' ) ?></span>
                     </div>
                 <?php } else { ?>
                     <a class="footer__logo footer__logo_link" href="<?php echo esc_url( home_url( '/' ) ) ?>">
                         <svg class="footer__logo-img">
                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
                         </svg>
-                        <span class="footer__logo-text">Web Sphere</span>
+                        <span class="footer__logo-text"><?php _e( 'Web Sphere', 'web_sphere' ) ?></span>
                     </a>
                 <?php } ?>
                 <?php wp_nav_menu(
@@ -42,12 +42,12 @@
             </div>
             <div class="footer__row footer__contacts">
                 <?php if ( get_theme_mod( 'site_phone' ) ) { ?>
-                    <div class="footer__contacts-item">Телефон: <a
+                    <div class="footer__contacts-item"><?php _e( 'Телефон', 'web_sphere' ) ?>: <a
                                 href="tel:<?php echo preg_replace( '/\D/', '', get_theme_mod( 'site_phone' ) ) ?>"><?php echo get_theme_mod( 'site_phone' ) ?></a>
                     </div>
                 <?php } ?>
                 <?php if ( get_theme_mod( 'site_email' ) ) { ?>
-                <div class="footer__contacts-item">E-mail: <a
+                <div class="footer__contacts-item"><?php _e( 'E-mail', 'web_sphere' ) ?>: <a
                             href="mailto:<?php echo get_theme_mod( 'site_email' ) ?>"><?php echo get_theme_mod( 'site_email' ) ?></a>
                     <?php } ?>
                 </div>
@@ -56,14 +56,11 @@
                 <div class="footer__copyright">© Web Sphere 2025, All Rights Reserved</div>
                 <div class="footer__bottom-links">
                     <a class="footer__copyright" href="<?php echo esc_url( '/policy' ) ?>" target="_blank"
-                       rel="noopener">Политика
-                        конфиденциальности</a>
+                       rel="noopener"><?php _e( 'Политика конфиденциальности', 'web_sphere' ) ?></a>
                     <a class="footer__copyright" href="<?php echo esc_url( '/cookie' ) ?>" target="_blank"
-                       rel="noopener">Политика использования
-                        файлов cookie</a>
+                       rel="noopener"><?php _e( 'Политика использования файлов cookie', 'web_sphere' ) ?></a>
                     <a class="footer__copyright" href="<?php echo esc_url( '/agreement' ) ?>" target="_blank"
-                       rel="noopener">Согласие на обработку
-                        персональных данных</a>
+                       rel="noopener"><?php _e( 'Согласие на обработку персональных данных', 'web_sphere' ) ?></a>
                 </div>
             </div>
         </div>
@@ -78,11 +75,19 @@
             </svg>
         </button>
         <div class="modal__inner modal-contact__inner">
-            <div class="modal__title">Обсудим проект?</div>
-            <p class="modal-contact__text">Привет! Меня зовут Александр, и я буду рад помочь с вашим проектом, можете
-                позвонить по телефону <a
-                        href="tel:<?php echo preg_replace( '/\D/', '', get_theme_mod( 'site_phone' ) ) ?>"><?php echo get_theme_mod( 'site_phone' ) ?></a>
-                или связаться по контактам ниже</p>
+            <div class="modal__title"><?php _e( 'Обсудим проект?', 'web_sphere' ) ?></div>
+            <p class="modal-contact__text">
+                <?php
+                printf(
+                        __( 'Привет! Меня зовут Александр, и я буду рад помочь с вашим проектом, можете позвонить по телефону %s или связаться по контактам ниже.', 'web_sphere' ),
+                        sprintf(
+                                '<a href="tel:%s">%s</a>',
+                                esc_attr( preg_replace( '/\D/', '', get_theme_mod( 'site_phone' ) ) ),
+                                esc_html( get_theme_mod( 'site_phone' ) )
+                        )
+                );
+                ?>
+            </p>
             <div class="modal-contact__links">
                 <?php if ( get_theme_mod( 'site_social_telegram' ) ) { ?>
                     <a class="modal-contact__link"
@@ -107,7 +112,7 @@
                 <?php } ?>
             </div>
 
-            <p class="modal-contact__text">Либо заполните форму и мы свяжемся с вами так быстро, как только сможем</p>
+            <p class="modal-contact__text"><?php _e( 'Либо заполните форму и мы свяжемся с вами так быстро, как только сможем', 'web_sphere' ) ?></p>
             <?php echo do_shortcode( '[contact-form-7 id="4b677ce" title="Shall we discuss the project?" html_class="form modal-contact__form"]' ); ?>
         </div>
     </div>
@@ -120,7 +125,7 @@
             </svg>
         </button>
         <div class="modal__inner">
-            <p class="modal__text js-modal-text">Тексто об успешной отправке или ошибке, попробуйте еще раз</p>
+            <p class="modal__text js-modal-text"></p>
         </div>
     </div>
 </div>
@@ -147,7 +152,16 @@
 <div class="cookie" id="cookie-notification">
     <div class="container cookie__inner">
         <p class="cookie__text">
-            На этом сайте не используются файлы <a href="<?php echo esc_url( '/cookie' ) ?>" target="_blank">cookie</a>.
+            <?php
+            printf(
+                    __( 'На этом сайте не используются файлы %s.', 'web_sphere' ),
+                    sprintf(
+                            '<a href="%s" target="_blank">%s</a>.',
+                            esc_url( '/cookie' ),
+                            __( 'cookie', 'web_sphere' )
+                    )
+            );
+            ?>
         </p>
         <button class="cookie__btn simple-button simple-button_light  js-cookie-accept">
             <span>OK</span>
