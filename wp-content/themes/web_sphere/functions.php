@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.1' );
+	define( '_S_VERSION', '1.0.2' );
 }
 
 /**
@@ -167,3 +167,15 @@ require get_template_directory() . '/inc/wpcf7.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Breadcrumbs
+ */
+require get_template_directory() . '/inc/breadcrumbs.php';
+
+/**
+ * Filters
+ */
+require get_template_directory() . '/inc/filters.php';
+
+

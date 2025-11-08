@@ -18,7 +18,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(is_home() || is_front_page() ? 'net' : ''); ?>>
 <?php wp_body_open(); ?>
 
 <header class="header" id="header">
@@ -84,3 +84,9 @@
 </header>
 
 <main class="main">
+
+    <?php if ( ! is_home() && ! is_front_page() && function_exists( 'web_sphere_breadcrumbs' ) ) {
+        echo '<div class="container">';
+        web_sphere_breadcrumbs();
+        echo '</div>';
+    } ?>
