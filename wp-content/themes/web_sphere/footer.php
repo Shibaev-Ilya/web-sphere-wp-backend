@@ -154,9 +154,9 @@
         <p class="cookie__text">
             <?php
             printf(
-                    __( 'На этом сайте не используются файлы %s.', 'web_sphere' ),
+                    __( 'На этом сайте не используются файлы %s', 'web_sphere' ),
                     sprintf(
-                            '<a href="%s" target="_blank">%s</a>.',
+                            '<a href="%s" target="_blank">%s</a>',
                             esc_url( '/cookie' ),
                             __( 'cookie', 'web_sphere' )
                     )
