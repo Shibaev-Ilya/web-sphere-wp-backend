@@ -24,4 +24,5 @@ function web_sphere_show_meta() {
 	echo '<link rel="apple-touch-icon" sizes="167x167" href="' . get_template_directory_uri() . '/dist/img/favicons/apple-touch-icon-167x167.png">';
 	echo '<link rel="apple-touch-icon" sizes="180x180" href="' . get_template_directory_uri() . '/dist/img/favicons/apple-touch-icon-180x180.png">';
 	echo '<link rel="apple-touch-icon" sizes="1024x1024" href="' . get_template_directory_uri() . '/dist/img/favicons/apple-touch-icon-1024x1024.png">';
+	echo '<link rel="preload" href="' . get_template_directory_uri() . '/dist/fonts/ProstoOne-Regular.woff2" as="font" type="font/woff2" crossorigin>';
 }

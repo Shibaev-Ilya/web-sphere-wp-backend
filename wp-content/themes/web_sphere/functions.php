@@ -180,7 +180,7 @@ function web_sphere_scripts() {
 			get_template_directory_uri() . '/dist/separated-styles/advantages.css', array(), _S_VERSION, 'all' );
 	}
 
-	if (is_page_template( 'template-textpage.php' )) {
+	if ( is_page_template( 'template-textpage.php' ) ) {
 		wp_enqueue_style( 'web_sphere_style_textpage',
 			get_template_directory_uri() . '/dist/separated-styles/text-page.css', array(), _S_VERSION, 'all' );
 	}
@@ -224,4 +224,8 @@ require get_template_directory() . '/inc/breadcrumbs.php';
  */
 require get_template_directory() . '/inc/filters.php';
 
+/**
+ * Disable extra functional
+ */
+require get_template_directory() . '/inc/disable.php';
 

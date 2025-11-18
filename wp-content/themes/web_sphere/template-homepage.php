@@ -50,7 +50,8 @@ get_header();
                             <img class="services__landings-img"
                                  src="<?php echo get_template_directory_uri() ?>/dist/img/content/landings.jpg" alt=""
                                  width="396"
-                                 height="360">
+                                 height="360"
+                                 loading="lazy">
                         </picture>
                     </div>
                     <div class="services__item-inner">
@@ -68,7 +69,8 @@ get_header();
                             <img class="services__landings-img"
                                  src="<?php echo get_template_directory_uri() ?>/dist/img/content/com.jpg" alt=""
                                  width="396"
-                                 height="360">
+                                 height="360"
+                                 loading="lazy">
                         </picture>
                     </div>
                     <div class="services__item-inner">
@@ -86,7 +88,8 @@ get_header();
                             <img class="services__landings-img"
                                  src="<?php echo get_template_directory_uri() ?>/dist/img/content/ecomerce.jpg" alt=""
                                  width="396"
-                                 height="360">
+                                 height="360"
+                                 loading="lazy">
                         </picture>
                     </div>
                     <div class="services__item-inner">

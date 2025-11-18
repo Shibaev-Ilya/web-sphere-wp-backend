@@ -55,11 +55,11 @@
             <div class="footer__row footer__bottom">
                 <div class="footer__copyright">© Web Sphere 2025, All Rights Reserved</div>
                 <div class="footer__bottom-links">
-                    <a class="footer__copyright" href="<?php echo esc_url( '/policy' ) ?>" target="_blank"
+                    <a class="footer__copyright" href="<?php echo esc_url( '/policy/' ) ?>" target="_blank"
                        rel="noopener"><?php _e( 'Политика конфиденциальности', 'web_sphere' ) ?></a>
-                    <a class="footer__copyright" href="<?php echo esc_url( '/cookie' ) ?>" target="_blank"
+                    <a class="footer__copyright" href="<?php echo esc_url( '/cookie/' ) ?>" target="_blank"
                        rel="noopener"><?php _e( 'Политика использования файлов cookie', 'web_sphere' ) ?></a>
-                    <a class="footer__copyright" href="<?php echo esc_url( '/agreement' ) ?>" target="_blank"
+                    <a class="footer__copyright" href="<?php echo esc_url( '/agreement/' ) ?>" target="_blank"
                        rel="noopener"><?php _e( 'Согласие на обработку персональных данных', 'web_sphere' ) ?></a>
                 </div>
             </div>
