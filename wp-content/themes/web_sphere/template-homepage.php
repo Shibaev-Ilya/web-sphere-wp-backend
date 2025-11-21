@@ -18,11 +18,21 @@ get_header();
 
     <section class="intro-text">
         <div class="container">
-            <h1 class="header-2">Сайты <span class="brand-color">для бизнеса</span>, которые приносят заявки</h1>
-            <p>Разрабатываем современные сайты на WordPress, MODX и быстрые лендинги. От идеи до результата.</p>
+            <h1 class="header-2">
+                <?php
+                printf(
+                        __( 'Сайты %s, которые приносят заявки', 'web_sphere' ),
+                        sprintf(
+                                '<span class="brand-color">%s</span>',
+                                __( 'для бизнеса', 'web_sphere' )
+                        )
+                );
+                ?>
+            </h1>
+            <p><?php _e( 'Разрабатываем современные сайты на WordPress, MODX и быстрые лендинги. От идеи до результата.', 'web_sphere' ) ?></p>
             <div class="intro-text__buttons">
                 <button class="button js-open-modal" data-modal-id="callback">
-                    <span>Обсудить проект</span>
+                    <span><?php _e( 'Обсудить проект', 'web_sphere' ) ?></span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                         <path d="M2.375 1.5L8.375 7.5L2.375 13.5" stroke="#111111" stroke-width="2"/>
                     </svg>
@@ -33,8 +43,17 @@ get_header();
 
     <section class="services">
         <div class="container">
-            <h2 class="header-2 js-scroll-animate scroll-animate">Какие <span class="brand-color bold">сайты</span> мы
-                делаем?</h2>
+            <h2 class="header-2 js-scroll-animate scroll-animate">
+                <?php
+                printf(
+                        __( 'Какие %s, мы делаем?', 'web_sphere' ),
+                        sprintf(
+                                '<span class="brand-color bold">%s</span>',
+                                __( 'сайты', 'web_sphere' )
+                        )
+                );
+                ?>
+            </h2>
             <div class="services__list">
                 <div class="services__item services__item_wide js-open-modal js-scroll-animate scroll-animate scroll-animate_top"
                      data-modal-id="callback">
@@ -56,8 +75,10 @@ get_header();
                     </div>
                     <div class="services__item-inner">
                         <h3 class="header-3">Landing Page</h3>
-                        <p>Профессиональная разработка Landing Page для запуска рекламы. Высокая конверсия в заявки и
-                            продажи. Быстрые сроки и результат под ключ.</p>
+                        <p>
+                            <?php _e( 'Профессиональная разработка Landing Page для запуска рекламы. Высокая конверсия в заявки и
+                            продажи. Быстрые сроки и результат под ключ.', 'web_sphere' ) ?>
+                        </p>
                     </div>
                 </div>
                 <div class="services__item js-open-modal js-scroll-animate scroll-animate scroll-animate_left"
@@ -74,9 +95,13 @@ get_header();
                         </picture>
                     </div>
                     <div class="services__item-inner">
-                        <h3 class="header-3">Корпоративные сайты и сайты-визитки</h3>
-                        <p>Разрабатываем современные корпоративные сайты и сайты-визитки. Увеличиваем доверие к бренду и
-                            привлекаем клиентов через поисковые системы. Под ключ.</p>
+                        <h3 class="header-3">
+                            <?php _e( 'Корпоративные сайты и сайты-визитки', 'web_sphere' ) ?>
+                        </h3>
+                        <p>
+                            <?php _e( 'Разрабатываем современные корпоративные сайты и сайты-визитки. Увеличиваем доверие к бренду и
+                            привлекаем клиентов через поисковые системы. Под ключ.', 'web_sphere' ) ?>
+                        </p>
                     </div>
                 </div>
                 <div class="services__item js-open-modal js-scroll-animate scroll-animate scroll-animate_right"
@@ -93,10 +118,10 @@ get_header();
                         </picture>
                     </div>
                     <div class="services__item-inner">
-                        <h3 class="header-3">Интернет-магазины</h3>
-                        <p>Создаем высококонверсионные интернет-магазины с удобной навигацией и интеграцией с платежными
+                        <h3 class="header-3"><?php _e( 'Интернет-магазины', 'web_sphere' ) ?></h3>
+                        <p><?php _e( 'Создаем высококонверсионные интернет-магазины с удобной навигацией и интеграцией с платежными
                             системами на самой популярной системе управления контентом Wordpress. SEO-оптимизация для
-                            роста продаж.</p>
+                            роста продаж.', 'web_sphere' ) ?></p>
                     </div>
                 </div>
             </div>
@@ -151,10 +176,11 @@ get_header();
     <section class="form-section" id="contact-us">
         <div class="container">
             <div class="form-section__form-wrap">
-                <p class="form-section__title header-2 js-scroll-animate scroll-animate">Напишите нам</p>
-                <p class="form-section__subtitle js-scroll-animate scroll-animate">И мы свяжемся с вами в ближайшее
-                    время и
-                    обсудим детали работ</p>
+                <p class="form-section__title header-2 js-scroll-animate scroll-animate">
+                    <?php _e( 'Напишите нам', 'web_sphere' ) ?>
+                </p>
+                <p class="form-section__subtitle js-scroll-animate scroll-animate">
+                    <?php _e( 'И мы свяжемся с вами в ближайшее время и обсудим детали работ', 'web_sphere' ) ?></p>
                 <?php echo do_shortcode( '[contact-form-7 id="f2d1433" title="Contact us" html_class="form js-scroll-animate scroll-animate"]' ); ?>
             </div>
             <div class="form-section__text-wrap">
@@ -166,8 +192,17 @@ get_header();
     <section class="advantages">
         <div class="container">
             <div class="advantages__inner">
-                <h2 class="header-2 js-scroll-animate scroll-animate">Почему <span class="brand-color">с нами</span>
-                    работают?</h2>
+                <h2 class="header-2 js-scroll-animate scroll-animate">
+                    <?php
+                    printf(
+                            __( 'Почему %s, работают?', 'web_sphere' ),
+                            sprintf(
+                                    '<span class="brand-color">%s</span>',
+                                    __( 'с нами', 'web_sphere' )
+                            )
+                    );
+                    ?>
+                </h2>
 
                 <ul class="advantages__list">
                     <li class="js-scroll-animate scroll-animate">
@@ -175,37 +210,37 @@ get_header();
                             <svg>
                                 <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#award"></use>
                             </svg>
-                            <b>Никакой абонентской платы</b>
+                            <b><?php _e( 'Никакой абонентской платы', 'web_sphere' ) ?></b>
                         </p>
-                        <p>За простые проекты — только единоразовая оплата. Вы платите за результат, а не за "место в
-                            интернете".</p>
+                        <p><?php _e( 'За простые проекты — только единоразовая оплата. Вы платите за результат, а не за "место в
+                            интернете".', 'web_sphere' ) ?></p>
                     </li>
                     <li class="js-scroll-animate scroll-animate">
                         <p class="advantages__item-title">
                             <svg>
                                 <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#award"></use>
                             </svg>
-                            <b>Честные сроки и гарантии</b>
+                            <b><?php _e( 'Честные сроки и гарантии', 'web_sphere' ) ?></b>
                         </p>
-                        <p>Четко прописываем сроки в договоре и даем гарантию 1 год на все работы.</p>
+                        <p><?php _e( 'Четко прописываем сроки в договоре и даем гарантию 1 год на все работы.', 'web_sphere' ) ?></p>
                     </li>
                     <li class="js-scroll-animate scroll-animate">
                         <p class="advantages__item-title">
                             <svg>
                                 <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#award"></use>
                             </svg>
-                            <b>Говорим на одном языке</b>
+                            <b><?php _e( 'Говорим на одном языке', 'web_sphere' ) ?></b>
                         </p>
-                        <p>Объясняем все процессы просто и понятно. Вы всегда в курсе этапов разработки.</p>
+                        <p><?php _e( 'Объясняем все процессы просто и понятно. Вы всегда в курсе этапов разработки.', 'web_sphere' ) ?></p>
                     </li>
                     <li class="js-scroll-animate scroll-animate">
                         <p class="advantages__item-title">
                             <svg>
                                 <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#award"></use>
                             </svg>
-                            <b>Скорость и оптимизация</b>
+                            <b><?php _e( 'Скорость и оптимизация', 'web_sphere' ) ?></b>
                         </p>
-                        <p>Наши сайты быстро загружаются, что важно для SEO и удобства пользователей.</p>
+                        <p><?php _e( 'Наши сайты быстро загружаются, что важно для SEO и удобства пользователей.', 'web_sphere' ) ?></p>
                     </li>
 
                 </ul>

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web_sphere 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2025-11-05 23:06+0300\n"
+"POT-Creation-Date: 2025-11-18 14:25+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Ilia Shibaev\n"
@@ -20,6 +20,18 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
+
+#: archive.php:30
+msgid "Предыдущая"
+msgstr ""
+
+#: archive.php:31
+msgid "Следующая"
+msgstr ""
+
+#: archive.php:32
+msgid "Навигация по страницам"
+msgstr ""
 
 #: footer.php:24 footer.php:31 header.php:31
 msgid "Web Sphere"
@@ -60,23 +72,35 @@ msgstr ""
 
 #: footer.php:157
 #, php-format
-msgid "На этом сайте не используются файлы %s."
+msgid "На этом сайте не используются файлы %s"
 msgstr ""
 
 #: footer.php:161
 msgid "cookie"
 msgstr ""
 
-#: header.php:55
+#: header.php:74 template-homepage.php:35
 msgid "Обсудить проект"
 msgstr ""
 
-#: header.php:60 inc/customizer.php:50
+#: header.php:79 inc/customizer.php:50
 msgid "Telegram"
 msgstr ""
 
-#: header.php:69
+#: header.php:88
 msgid "WhatsApp"
+msgstr ""
+
+#: inc/breadcrumbs.php:9
+msgid "Главная"
+msgstr ""
+
+#: inc/breadcrumbs.php:58
+msgid "Результаты поиска"
+msgstr ""
+
+#: inc/breadcrumbs.php:69
+msgid "Архив"
 msgstr ""
 
 #: inc/customizer.php:10
@@ -103,6 +127,114 @@ msgstr ""
 msgid "Max"
 msgstr ""
 
+#: inc/disable.php:7
+msgid "No feed available, please visit the <a href=\""
+msgstr ""
+
+#: template-homepage.php:24
+#, php-format
+msgid "Сайты %s, которые приносят заявки"
+msgstr ""
+
+#: template-homepage.php:27
+msgid "для бизнеса"
+msgstr ""
+
+#: template-homepage.php:32
+msgid "Разрабатываем современные сайты на WordPress, MODX и быстрые лендинги. От идеи до результата."
+msgstr ""
+
+#: template-homepage.php:49
+#, php-format
+msgid "Какие %s, мы делаем?"
+msgstr ""
+
+#: template-homepage.php:52
+msgid "сайты"
+msgstr ""
+
+#: template-homepage.php:79
+msgid ""
+"Профессиональная разработка Landing Page для запуска рекламы. Высокая конверсия в заявки и\n"
+"                            продажи. Быстрые сроки и результат под ключ."
+msgstr ""
+
+#: template-homepage.php:99
+msgid "Корпоративные сайты и сайты-визитки"
+msgstr ""
+
+#: template-homepage.php:102
+msgid ""
+"Разрабатываем современные корпоративные сайты и сайты-визитки. Увеличиваем доверие к бренду и\n"
+"                            привлекаем клиентов через поисковые системы. Под ключ."
+msgstr ""
+
+#: template-homepage.php:121
+msgid "Интернет-магазины"
+msgstr ""
+
+#: template-homepage.php:122
+msgid ""
+"Создаем высококонверсионные интернет-магазины с удобной навигацией и интеграцией с платежными\n"
+"                            системами на самой популярной системе управления контентом Wordpress. SEO-оптимизация для\n"
+"                            роста продаж."
+msgstr ""
+
+#: template-homepage.php:180
+msgid "Напишите нам"
+msgstr ""
+
+#: template-homepage.php:183
+msgid "И мы свяжемся с вами в ближайшее время и обсудим детали работ"
+msgstr ""
+
+#: template-homepage.php:198
+#, php-format
+msgid "Почему %s, работают?"
+msgstr ""
+
+#: template-homepage.php:201
+msgid "с нами"
+msgstr ""
+
+#: template-homepage.php:213
+msgid "Никакой абонентской платы"
+msgstr ""
+
+#: template-homepage.php:215
+msgid ""
+"За простые проекты — только единоразовая оплата. Вы платите за результат, а не за \"место в\n"
+"                            интернете\"."
+msgstr ""
+
+#: template-homepage.php:223
+msgid "Честные сроки и гарантии"
+msgstr ""
+
+#: template-homepage.php:225
+msgid "Четко прописываем сроки в договоре и даем гарантию 1 год на все работы."
+msgstr ""
+
+#: template-homepage.php:232
+msgid "Говорим на одном языке"
+msgstr ""
+
+#: template-homepage.php:234
+msgid "Объясняем все процессы просто и понятно. Вы всегда в курсе этапов разработки."
+msgstr ""
+
+#: template-homepage.php:241
+msgid "Скорость и оптимизация"
+msgstr ""
+
+#: template-homepage.php:243
+msgid "Наши сайты быстро загружаются, что важно для SEO и удобства пользователей."
+msgstr ""
+
+#: template-parts/archive.php:29
+msgid "Читать далее..."
+msgstr ""
+
 #: template-parts/content-none.php:24
 #, php-format
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
@@ -113,7 +245,7 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: template-parts/content.php:35
+#: template-parts/content-post.php:32 template-parts/content.php:35
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""

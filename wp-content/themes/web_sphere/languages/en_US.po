@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web_sphere 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2025-11-05 23:06+0300\n"
-"PO-Revision-Date: 2025-11-05 23:08+0300\n"
+"POT-Creation-Date: 2025-11-18 14:25+0300\n"
+"PO-Revision-Date: 2025-11-18 14:44+0300\n"
 "Last-Translator: \n"
 "Language-Team: Ilia Shibaev\n"
 "Language: en\n"
@@ -21,9 +21,21 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
+#: archive.php:30
+msgid "Предыдущая"
+msgstr "Previous"
+
+#: archive.php:31
+msgid "Следующая"
+msgstr "Next"
+
+#: archive.php:32
+msgid "Навигация по страницам"
+msgstr "Page navigation"
+
 #: footer.php:24 footer.php:31 header.php:31
 msgid "Web Sphere"
-msgstr ""
+msgstr "Web Sphere"
 
 #: footer.php:45 inc/customizer.php:21
 msgid "Телефон"
@@ -39,7 +51,7 @@ msgstr "Privacy policy"
 
 #: footer.php:61
 msgid "Политика использования файлов cookie"
-msgstr "Cookie Policy"
+msgstr "Cookie usage policy"
 
 #: footer.php:63
 msgid "Согласие на обработку персональных данных"
@@ -47,7 +59,7 @@ msgstr "Consent to the processing of personal data"
 
 #: footer.php:78
 msgid "Обсудим проект?"
-msgstr "Shall we discuss the project?"
+msgstr "Would you like to discuss the project?"
 
 #: footer.php:82
 #, php-format
@@ -64,28 +76,40 @@ msgstr "Or fill out the form and we will contact you as soon as possible"
 
 #: footer.php:157
 #, php-format
-msgid "На этом сайте не используются файлы %s."
-msgstr "This website does not use %s files."
+msgid "На этом сайте не используются файлы %s"
+msgstr "This website does not use %s files"
 
 #: footer.php:161
 msgid "cookie"
 msgstr "cookie"
 
-#: header.php:55
+#: header.php:74 template-homepage.php:35
 msgid "Обсудить проект"
 msgstr "Discuss the project"
 
-#: header.php:60 inc/customizer.php:50
+#: header.php:79 inc/customizer.php:50
 msgid "Telegram"
 msgstr "Telegram"
 
-#: header.php:69
+#: header.php:88
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
+#: inc/breadcrumbs.php:9
+msgid "Главная"
+msgstr "Home"
+
+#: inc/breadcrumbs.php:58
+msgid "Результаты поиска"
+msgstr "Search results"
+
+#: inc/breadcrumbs.php:69
+msgid "Архив"
+msgstr "Archive"
+
 #: inc/customizer.php:10
 msgid "Контактная информация"
-msgstr "Contact info"
+msgstr "Contacts"
 
 #: inc/customizer.php:32
 msgid "Email"
@@ -93,7 +117,7 @@ msgstr "Email"
 
 #: inc/customizer.php:39
 msgid "Ссылки на социальные сети"
-msgstr "Social media links"
+msgstr "Links to social media"
 
 #: inc/customizer.php:61
 msgid "Whatsapp"
@@ -107,6 +131,143 @@ msgstr "VK"
 msgid "Max"
 msgstr "Max"
 
+#: inc/disable.php:7
+msgid "No feed available, please visit the <a href=\""
+msgstr ""
+
+#: template-homepage.php:24
+#, php-format
+msgid "Сайты %s, которые приносят заявки"
+msgstr "Websites %s that generate leads"
+
+#: template-homepage.php:27
+msgid "для бизнеса"
+msgstr "for business"
+
+#: template-homepage.php:32
+msgid ""
+"Разрабатываем современные сайты на WordPress, MODX и быстрые лендинги. От "
+"идеи до результата."
+msgstr ""
+"We develop modern WordPress, MODX websites and fast landing pages. From idea "
+"to result."
+
+#: template-homepage.php:49
+#, php-format
+msgid "Какие %s, мы делаем?"
+msgstr "What kind of %s do we make?"
+
+#: template-homepage.php:52
+msgid "сайты"
+msgstr "websites"
+
+#: template-homepage.php:79
+msgid ""
+"Профессиональная разработка Landing Page для запуска рекламы. Высокая "
+"конверсия в заявки и\n"
+"                            продажи. Быстрые сроки и результат под ключ."
+msgstr ""
+"Professional development of a Landing Page for launching ads. High "
+"conversion rate into leads and sales. Fast turnaround time and turnkey "
+"results."
+
+#: template-homepage.php:99
+msgid "Корпоративные сайты и сайты-визитки"
+msgstr "Corporate websites and business cards"
+
+#: template-homepage.php:102
+msgid ""
+"Разрабатываем современные корпоративные сайты и сайты-визитки. Увеличиваем "
+"доверие к бренду и\n"
+"                            привлекаем клиентов через поисковые системы. Под "
+"ключ."
+msgstr ""
+"We develop modern corporate websites and business cards. Increase brand "
+"trust and attract customers through search engines."
+
+#: template-homepage.php:121
+msgid "Интернет-магазины"
+msgstr "Online-shop"
+
+#: template-homepage.php:122
+msgid ""
+"Создаем высококонверсионные интернет-магазины с удобной навигацией и "
+"интеграцией с платежными\n"
+"                            системами на самой популярной системе управления "
+"контентом Wordpress. SEO-оптимизация для\n"
+"                            роста продаж."
+msgstr ""
+"We create high-converting online stores with easy navigation and integration "
+"with payment systems on the most popular content management system, "
+"Wordpress. SEO-optimization for sales growth."
+
+#: template-homepage.php:180
+msgid "Напишите нам"
+msgstr "Contact us"
+
+#: template-homepage.php:183
+msgid "И мы свяжемся с вами в ближайшее время и обсудим детали работ"
+msgstr ""
+"We will get back to you as soon as possible to discuss the details of your "
+"project"
+
+#: template-homepage.php:198
+#, php-format
+msgid "Почему %s, работают?"
+msgstr "Why do %s work with us?"
+
+#: template-homepage.php:201
+msgid "с нами"
+msgstr "companies"
+
+#: template-homepage.php:213
+msgid "Никакой абонентской платы"
+msgstr "No subscription fee"
+
+#: template-homepage.php:215
+msgid ""
+"За простые проекты — только единоразовая оплата. Вы платите за результат, а "
+"не за \"место в\n"
+"                            интернете\"."
+msgstr ""
+"For simple projects, there is only one-time payment. You pay for the result, "
+"not for \"space on the Internet\"."
+
+#: template-homepage.php:223
+msgid "Честные сроки и гарантии"
+msgstr "Fair terms and guarantees"
+
+#: template-homepage.php:225
+msgid "Четко прописываем сроки в договоре и даем гарантию 1 год на все работы."
+msgstr ""
+"We clearly specify the deadlines in the contract and provide a 1-year "
+"warranty for all work."
+
+#: template-homepage.php:232
+msgid "Говорим на одном языке"
+msgstr "We speak the same language"
+
+#: template-homepage.php:234
+msgid ""
+"Объясняем все процессы просто и понятно. Вы всегда в курсе этапов разработки."
+msgstr ""
+"We explain all processes in a simple and clear way. You are always aware of "
+"the development stages."
+
+#: template-homepage.php:241
+msgid "Скорость и оптимизация"
+msgstr "Speed and optimization"
+
+#: template-homepage.php:243
+msgid ""
+"Наши сайты быстро загружаются, что важно для SEO и удобства пользователей."
+msgstr ""
+"Our websites load quickly, which is important for SEO and user experience."
+
+#: template-parts/archive.php:29
+msgid "Читать далее..."
+msgstr "Reed more..."
+
 #: template-parts/content-none.php:24
 #, php-format
 msgid ""
@@ -119,7 +280,7 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Edit <span class=\"screen-reader-text\">%s</span>"
 
-#: template-parts/content.php:35
+#: template-parts/content-post.php:32 template-parts/content.php:35
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
