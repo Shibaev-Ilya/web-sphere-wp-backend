@@ -185,6 +185,11 @@ function web_sphere_scripts() {
 			get_template_directory_uri() . '/dist/separated-styles/text-page.css', array(), _S_VERSION, 'all' );
 	}
 
+	if (is_page('seo-translit')) {
+		wp_enqueue_style( 'web_sphere_style_translit',
+			get_template_directory_uri() . '/dist/separated-styles/translit.css', array(), _S_VERSION, 'all' );
+	}
+
 	if (is_page_template('template-compare-tool.php')) {
 		wp_enqueue_style( 'web_sphere_style_compare-tool', get_template_directory_uri() . '/dist/separated-styles/compare-tool.css', array(), _S_VERSION, 'all' );
 	}
