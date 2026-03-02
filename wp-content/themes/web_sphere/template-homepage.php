@@ -9,8 +9,8 @@ get_header();
     <section class="intro">
         <div class="container intro__inner">
             <div class="intro__text-block">
-                <p class="intro__title focus-in-fast">Web <span class="brand-color">Sphere</span></p>
-                <p class="focus-in intro__subtitle">we develop web-sites</p>
+                <p class="intro__title focus-in-fast">ВЕБ <span class="brand-color">СФЕРА</span></p>
+                <p class="focus-in intro__subtitle">разработка сайтов</p>
             </div>
             <canvas class="sphere-canvas" id="sphereCanvas" width="600" height="600"></canvas>
         </div>
@@ -29,7 +29,7 @@ get_header();
                 );
                 ?>
             </h1>
-            <p><?php _e( 'Разрабатываем современные сайты на WordPress, MODX и быстрые лендинги. От идеи до результата.', 'web_sphere' ) ?></p>
+            <p><?php _e( 'Разрабатываем современные и быстрые сайты. От идеи до результата.', 'web_sphere' ) ?></p>
             <div class="intro-text__buttons">
                 <button class="button js-open-modal" data-modal-id="callback">
                     <span><?php _e( 'Обсудить проект', 'web_sphere' ) ?></span>
@@ -74,9 +74,9 @@ get_header();
                         </picture>
                     </div>
                     <div class="services__item-inner">
-                        <h3 class="header-3">Landing Page</h3>
+                        <h3 class="header-3">Одностраничный сайт</h3>
                         <p>
-                            <?php _e( 'Профессиональная разработка Landing Page для запуска рекламы. Высокая конверсия в заявки и
+                            <?php _e( 'Профессиональная разработка одностраничных сайтов для запуска рекламы. Высокая конверсия в заявки и
                             продажи. Быстрые сроки и результат под ключ.', 'web_sphere' ) ?>
                         </p>
                     </div>
@@ -132,42 +132,42 @@ get_header();
         <div class="container">
             <div class="marquee__inner">
                 <div class="marquee__items">
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
                 </div>
                 <div class="marquee__items">
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
                 </div>
             </div>
             <div class="marquee__inner">
                 <div class="marquee__items marquee__items_reverse">
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
                 </div>
                 <div class="marquee__items marquee__items_reverse">
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
-                    <div class="marquee__item">Get best offer!</div>
-                    <div class="marquee__item">Web Sphere</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">Получите лучшее предложение!</div>
+                    <div class="marquee__item">/ Веб Сфера /</div>
                 </div>
             </div>
         </div>
@@ -184,7 +184,7 @@ get_header();
                 <?php echo do_shortcode( '[contact-form-7 id="f2d1433" title="Contact us" html_class="form js-scroll-animate scroll-animate"]' ); ?>
             </div>
             <div class="form-section__text-wrap">
-                <p class="form-section__text js-scroll-animate scroll-animate">WEB <br>SPHERE</p>
+                <p class="form-section__text js-scroll-animate scroll-animate">ВЕБ <br>СФЕРА</p>
             </div>
         </div>
     </section>

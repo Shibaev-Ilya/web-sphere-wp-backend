@@ -21,14 +21,14 @@
                         <svg class="footer__logo-img">
                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
                         </svg>
-                        <span class="footer__logo-text"><?php _e( 'Web Sphere', 'web_sphere' ) ?></span>
+                        <span class="footer__logo-text"><?php _e( 'Веб Сфера', 'web_sphere' ) ?></span>
                     </div>
                 <?php } else { ?>
                     <a class="footer__logo footer__logo_link" href="<?php echo esc_url( home_url( '/' ) ) ?>">
                         <svg class="footer__logo-img">
                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
                         </svg>
-                        <span class="footer__logo-text"><?php _e( 'Web Sphere', 'web_sphere' ) ?></span>
+                        <span class="footer__logo-text"><?php _e( 'Веб Сфера', 'web_sphere' ) ?></span>
                     </a>
                 <?php } ?>
                 <?php wp_nav_menu(
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="footer__row footer__bottom">
-                <div class="footer__copyright">© Web Sphere 2025, All Rights Reserved</div>
+                <div class="footer__copyright">© Веб Сфера 2026</div>
                 <div class="footer__bottom-links">
                     <a class="footer__copyright" href="<?php echo esc_url( '/policy/' ) ?>" target="_blank"
                        rel="noopener"><?php _e( 'Политика конфиденциальности', 'web_sphere' ) ?></a>
