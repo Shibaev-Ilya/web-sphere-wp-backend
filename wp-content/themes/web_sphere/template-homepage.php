@@ -9,7 +9,7 @@ get_header();
     <section class="intro">
         <div class="container intro__inner">
             <div class="intro__text-block">
-                <p class="intro__title focus-in-fast">ВЕБ <span class="brand-color">СФЕРА</span></p>
+                <p class="intro__title focus-in-fast">КВАНТ <span class="brand-color">СФЕРА</span></p>
                 <p class="focus-in intro__subtitle">разработка сайтов</p>
             </div>
             <canvas class="sphere-canvas" id="sphereCanvas" width="600" height="600"></canvas>
@@ -133,41 +133,41 @@ get_header();
             <div class="marquee__inner">
                 <div class="marquee__items">
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
                 </div>
                 <div class="marquee__items">
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                 </div>
             </div>
             <div class="marquee__inner">
                 <div class="marquee__items marquee__items_reverse">
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
                 </div>
                 <div class="marquee__items marquee__items_reverse">
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                     <div class="marquee__item">Получите лучшее предложение!</div>
-                    <div class="marquee__item">/ Веб Сфера /</div>
+                    <div class="marquee__item">/ Квант Сфера /</div>
                 </div>
             </div>
         </div>
@@ -184,7 +184,7 @@ get_header();
                 <?php echo do_shortcode( '[contact-form-7 id="f2d1433" title="Contact us" html_class="form js-scroll-animate scroll-animate"]' ); ?>
             </div>
             <div class="form-section__text-wrap">
-                <p class="form-section__text js-scroll-animate scroll-animate">ВЕБ <br>СФЕРА</p>
+                <p class="form-section__text js-scroll-animate scroll-animate">КВАНТ <br>СФЕРА</p>
             </div>
         </div>
     </section>

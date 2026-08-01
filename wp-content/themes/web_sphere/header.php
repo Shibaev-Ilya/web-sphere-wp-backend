@@ -28,14 +28,14 @@
                 <svg class="header__logo-img">
                     <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
                 </svg>
-                <span class="header__logo-text"><?php _e( 'Веб сфера', 'web_sphere' ) ?></span>
+                <span class="header__logo-text"><?php _e( 'Квант Сфера', 'web_sphere' ) ?></span>
             </div>
         <?php } else { ?>
             <a class="header__logo" href="<?php echo esc_url( home_url( '/' ) ) ?>">
                 <svg class="header__logo-img">
                     <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/img/sprites/sprite.svg#logo"></use>
                 </svg>
-                <span class="header__logo-text">Веб сфера</span>
+                <span class="header__logo-text">Квант Сфера</span>
             </a>
         <?php } ?>
         <label class="theme-switch">
